@@ -14,15 +14,35 @@ import javax.swing.JOptionPane;
 public class SpeakAndSpell {
 
 	public static void main(String[] args) {
-		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
 
-		// 2. Catch the user's answer in a String
+speak("spell mandlebrot");
+		
+ String ans = JOptionPane.showInputDialog(null, "type here");
+if (ans.equals("mandlebrot")){
+	speak("correct");
+}
+else{
+	speak("wrong");
+}
+speak("spell patrick");
 
-		// 3. If the user spelled the word correctly, speak "correct"
+String ans2 = JOptionPane.showInputDialog(null, "type here");
+if (ans2.equals("patrick")){
+	speak("correct");
+}
+else{
+	speak("wrong");
+}
+speak("spell computer");
 
-		// 4. Otherwise say "wrong"
+String ans3 = JOptionPane.showInputDialog(null, "type here");
+if (ans3.equals("computer")){
+	speak("correct");
+}
+else{
+	speak("wrong");
+}
 
-		// 5. repeat the process for other words
 		
 	}
 
